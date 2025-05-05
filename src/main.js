@@ -5,5 +5,10 @@ import App from './App.vue'
 import './assets/style.css'
 import './assets/tailwind.css'
 
+// router import 
+import router from './router'
 
-createApp(App).mount('#app')
+
+createApp(App)
+  .use(router)
+  .mount('#app')
