@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@reference "tailwindcss";
+/* @apply on works if tailwind's utilities are laoded */
+/* @import or @reference "tailwindcss" loads the tailwindcss untils */
+
+
+/* Main Global App Styles */
+
+
+  /* Views Pages Styling */
+
+
+  /* Child Componets Styling */
+
+
+
+/* Task List Styling */
+.taskListTaskItemsContainer {
+  @apply border border-2 m-2 p-2 flex flex-row flex-wrap
+  justify-around
+
+}
+
+/* Task Item Styling */
+.taskItemCard {
+  @apply border p-2 flex flex-col justify-center text-center
+  rounded-xl transition-all ease-in-out hover:shadow-xl
+}

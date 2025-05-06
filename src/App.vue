@@ -24,11 +24,22 @@
       }
     },
 
+    mounted() {
+      const tasks = [
+        {title:"Make 1 Phone Case", content:"Upload 1 phone case to store front"},
+        {title:"Make Youtube Video", content:"Edit and upload youtube video to channel"},
+        {title:"Cook Dinner Tonight", content:"Take food out of fride and cook dinner"}
+      ]
+
+      localStorage.setItem('tasks', JSON.stringify(tasks))
+      console.log("App has Mounted")
+    }
+
 
   }
 </script>
 
-<style scoped>
+<style>
 /* .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
