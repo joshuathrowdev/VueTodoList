@@ -1,5 +1,5 @@
 <template>
-  <div class="taskListTaskItemsContainer m-3 p-2">
+  <div class="taskListItemsContainer">
     <TaskItem v-for="task in tasks" :key="task.title" :title=task.title :content="task.content" ></TaskItem>
   </div>
 </template>
@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style>
 
 
 </style>

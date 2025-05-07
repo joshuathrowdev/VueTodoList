@@ -2,9 +2,9 @@
   <p>Acces to $route template ref with Vue Router</p>
   <p>Ex: current path: {{ $route.fullPath }} | this is the current full path</p>
 
-  <nav>
-    <RouterLink :to="{name:'AllTasks'}">All Tasks </RouterLink>
-    <RouterLink :to="{name:'ActiveTasks'}">Active Tasks </RouterLink>
+  <nav class="globalNavContainer">
+    <RouterLink :to="{name:'AllTasks'}" class="globalNavRoute">All Tasks </RouterLink>
+    <RouterLink :to="{name:'ActiveTasks'}" class="globalNavRoute">Active Tasks </RouterLink>
     
   </nav>
 

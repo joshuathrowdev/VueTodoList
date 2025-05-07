@@ -9,7 +9,15 @@
 
 
 /* Main Global App Styles */
+.globalNavContainer {
+  @apply p-3 flex flex-row justify-around
+}
 
+.globalNavRoute {
+  @apply p-2 rounded-xl text-white no-underline text-black
+  text-2xl font-semibold transition-all ease-in-out 
+  hover:shadow-xl hover:bg-green-300  hover:text-black
+}
 
   /* Views Pages Styling */
 
@@ -18,15 +26,32 @@
 
 
 
-/* Task List Styling */
-.taskListTaskItemsContainer {
-  @apply border border-2 m-2 p-2 flex flex-row flex-wrap
-  justify-around
+  /*  */
 
+.taskFormContainer {
+  @apply flex flex-row justify-center
+}
+
+.taskForm {
+  @apply m-3 p-4 flex flex-col text-center justify-center items-center
+  w-lg rounded-xl transition-all ease-in-out hover:shadow-2xl
+}
+
+.taskFormContainer label {
+  @apply text-2xl font-semibold uppercase mb-2 rounded-xl
+}
+
+.taskFormContainer input {
+  @apply w-md text-center mb-4 bg-[#242424] text-white text-lg
+}
+
+/* Task List Styling */
+.taskListItemsContainer {
+  @apply m-3 p-2 flex flex-row flex-wrap justify-around
 }
 
 /* Task Item Styling */
 .taskItemCard {
   @apply border p-2 flex flex-col justify-center text-center
-  rounded-xl transition-all ease-in-out hover:shadow-xl
+  rounded-xl w-md m-3 transition-all ease-in-out hover:shadow-xl
 }

@@ -1,8 +1,9 @@
 <template>
-  <h1>This is the All Tasks Page</h1>
-
   <div>
     <TaskForm />
+  </div>
+
+  <div >
     <TaskList />
   </div>
 </template>
